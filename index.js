@@ -17,7 +17,7 @@ client.connect(err => {
     const appointmentCollection = client.db("doctorsPortal").collection("appointment");
 
     app.get('/', (req,res)=>{
-        res.send("hello, i am running")
+        res.send("hello, i am home route")
     })
 
     app.post('/appointment',(req,res)=>{
@@ -36,7 +36,7 @@ client.connect(err => {
     })
 
 
-    console.log("load complite")
+    console.log("load complete")
 });
 
 
